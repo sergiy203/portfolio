@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спам</title>
+    <style>
+        div{
+     font-size: 40px; 
+     color: darkred;
+     text-align: center;
+     background-color: darkgray;
+     opacity: .7;
+     border-radius: 50px;
+     width: 30%;
+     margin: auto;
+ }
+ .cqe{
+     width: 200px;
+     height: 30px;
+     font-size: 24px;
+     text-align: center;
+ }
+ .btn {
+font-family: monospace;
+color: #FAFAFA;
+text-transform: uppercase;
+padding: 10px 20px;
+border-radius: 10px;
+border: 2px solid #FAFAFA;
+background: #252525;
+box-shadow: 3px 3px #fafafa;
+cursor: pointer;
+margin: 35px 0;	
+width: 200px;
+height: 45px;
+font-size: 24px;
+}
+
+.btn :active {
+box-shadow: none;
+transform: translate(3px, 3px);
+}
+ body{
+   background: url(https://preview.free3d.com/img/2017/06/2140176650648684378/4n5cx8vx.jpg);
+ }
+ @media only screen and (max-width:800px){
+    div{
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+    <script>
+         /*   function findSpam(str) {  
+let lowCaseStr = str.toLowerCase();  
+let answer=document.getElementById("enter")
+return !!(~lowCaseStr.indexOf('безкоштовно') || ~lowCaseStr.indexOf('гарантія'));  
+string=( 'Отримайте БЕЗКОШТОВНО, тільки клікнувши на посилання'+ ' перевірка на спам : ' + findSpam('Отримайте БЕЗКОШТОВНО, тільки клікнувши на посилання ') );  
+string=('Це гарантія, що ви виграєте' + 'перевірка на спам : ' + findSpam('Це гарантія, що ви виграєте ') );
+string=('Привіт як справи?'+ ' перевірка на спам : ' + findSpam('Привіт як справи?') );
+answer.innerHTML=string
+}  */
+function findSpam(str){
+    let lowCaseStr = str.toLowerCase()
+    let answer=document.getElementById("enter")
+    let spam= document.qef.a.value;
+    if(spam == 'спам' || 'гарантія' || 'безкоштовно'){
+        string=('Ваш текст містить спам')
+    }
+    else{
+        string=('Ваше текст не містить спам')
+    }
+    answer.innerHTML=string
+}
+    </script>
+        <div>
+            <p>Введіть текст а я скажу є там спам чи ні.</p>
+            <form name="qef" action="javascript:findSpam(str)">
+            <input class="cqe" name="a" type="text" value="" size="4">
+            <input class="btn" type="submit" value="Знайти спам">
+            </form>
+             <span id="enter"></span>
+            </div>
+</body>
+</html>

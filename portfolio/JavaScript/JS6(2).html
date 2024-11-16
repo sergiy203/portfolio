@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body style="background-color:darkgreen">
+    <style>
+        p{
+            background-color: orangered;
+            font-size: 50px;
+            color: khaki;
+            text-align: center;
+            text-shadow: 0 0 10px gray;    
+        }
+    </style>
+    <script>
+let aTr=+prompt("Введіть значення сторони а",3)
+let bTr=+prompt("Введіть значення сторони b",4)
+let cTr=+prompt("Введіть значення сторони с",5)
+if(aTr>0&&bTr>0&&cTr>0&&(aTr+bTr)>cTr&&(aTr+cTr)>bTr&&(bTr+cTr)>aTr){
+let p=(aTr+bTr+cTr)/2;
+let STr=Math.sqrt(p*(p-aTr)*(p-bTr)*(p-cTr))
+document.writeln("<p> Площа трикутника дорівнює "+STr+" см </p>")
+let PTr=aTr+bTr+cTr
+document.writeln("<p> Периметр трикутника дорівнює "+PTr+" см </p>")
+}else{
+    alert(`Трикутника зі сторонами a=${aTr} b=${bTr} c=${cTr} не існує`)
+}
+    </script>
+</body>
+</html>

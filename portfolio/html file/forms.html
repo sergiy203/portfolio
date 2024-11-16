@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Форми</title>
+	<link rel="stylesheet" type="text/css" href="css/forms.css">
+</head>
+<body>
+<p>Ми вивчаємо форми</p>
+<form name="f1">
+	<input type="text" name="text">
+	<input type="text" name="t1" size="20" maxlength="50" value="Введіть текст" class="in1">
+	<input type="text" name="t2" size="30" maxlength="50" value="Введення даних заблоковано" disabled class="in1">
+	<input type="text" name="t2" size="30" maxlength="50" value="Інформацію можна тільки читати" readonly class="in1">
+	<input type="password" name="password" class="in1">
+	<p>Вкажіть вашу стать </p>
+	<input type="radio" name="gender" class="in2" value="male"><span class="s1">♂чоловіча👨</span>
+	<input type="radio" name="gender" class="in2" value="female"><span class="s2">♀жіноча👩</span>
+	<br>
+	<p>Яку мову бажаєте вивчати</p>
+	<input type="checkbox" name="lang1" value="en" class="in3"><span class="s3">Англійська</span>
+	<input type="checkbox" name="lang1" value="sp" class="in3"><span class="s3">Іспанська</span>
+	<input type="checkbox" name="lang1" value="fr" class="in3"><span class="s3">Французька</span>
+	<input type="checkbox" name="lang1" value="uk" checked class="in3"><span class="s3">Українська</span>
+	<br>
+	<input type="submit" name="submit" value="✔Підтвердити✔" class="submit">
+	<input type="reset" name="reset" value="×Все з початку×"
+	class="reset">
+	<input type="button" name="button" value="▶️Запуск▶️"
+	class="play">
+	<button>
+		<img src="https://www.openhab.org/logos/mail.png" width="50" align="absmiddle">
+		Відправити листа
+	</button>
+	<br>
+	<button>
+		<img src="https://img.freepik.com/premium-vector/computer-folder-in-flat-style-vector-illustration-in-modern-design-on-white-background_575709-329.jpg" width="60">
+		<input type="file" name="download">
+	</button>
+	<br>
+	<textarea cols="20" rows="3" wrap="off"></textarea>
+    <textarea cols="30" rows="5" wrap="virtual"></textarea>
+    <textarea cols="50" rows="7" wrap="physical"></textarea>
+    <select>
+    	<option value="en">Англійська</option>
+    	<option value="sp">Іспанська</option>
+    	<option value="fr">Французька</option>
+    	<option value="uk">Українська</option>
+    </select>
+    <select size="2">
+    	<option value="en" selected>Англійська</option>
+    	<option value="sp">Іспанська</option>
+    	<option value="fr">Французька</option>
+    	<option value="uk">Українська</option>
+    </select>
+    <select size="4" multiple>
+    	<option value="en" selected>Англійська</option>
+    	<option value="sp">Іспанська</option>
+    	<option value="fr">Французька</option>
+    	<option value="uk">Українська</option>
+    </select>
+</form>
+</body>
+</html>

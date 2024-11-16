@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вхід на сайт за віком</title>
+    <style>
+        div{
+font-size: 40px; 
+color: darkred;
+text-align: center;
+background-color: darkgray;
+opacity: .7;
+border-radius: 50px;
+width: 30%;
+margin: auto;
+}
+.cqe{
+width: 400px;
+height: 30px;
+font-size: 24px;
+text-align: center;
+}
+.btn {
+font-family: monospace;
+color: #FAFAFA;
+text-transform: uppercase;
+padding: 10px 20px;
+border-radius: 10px;
+border: 2px solid #FAFAFA;
+background: #252525;
+box-shadow: 3px 3px #fafafa;
+cursor: pointer;
+margin: 35px 0;	
+width: 250px;
+height: 45px;
+font-size: 24px;
+}
+
+.btn :active {
+box-shadow: none;
+transform: translate(3px, 3px);
+}
+body{
+background: url(https://preview.free3d.com/img/2017/06/2140176650648684378/4n5cx8vx.jpg);
+}
+@media only screen and (max-width:800px){
+    div{
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+    <script>
+        function Age(){
+        let age =+ document.qef.Years.value;
+        let years;
+        let answer= document.getElementById("enter");
+        if(age%10==1 && age != 11 && age !=111){
+            years='рік'
+        }
+        else if(age%10==2 && age != 12 && age !=112 || age%10==3 && age != 13 && age !=113 || age%10==4 && age != 14 && age !=114){
+            years='роки'
+        }
+      else{
+            years='років'
+        }
+        if(age >= 18 && age<=100){
+            string=(`Вам ${age} ${years} тому ласкаво просимо на наш сайт `)
+        } else{
+            string=( `Не впевнені що ви наш клієнт, бо вам ${age} ${years} `)
+        }
+        answer.innerHTML=string
+    }
+        
+        
+    </script>
+    <div>
+        <p>Скільки вам років?</p>
+        <form name="qef" action="javascript:Age()">
+        <input class="cqe" name="Years" type="text" value="18" size="4">
+        <input class="btn" type="submit" value="Увійти на сайт">
+        </form>
+         <span id="enter"></span>
+        </div>
+</body>
+</html>

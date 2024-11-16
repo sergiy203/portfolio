@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        body{
+            background-color: crimson;
+            color: indigo;
+            font-size: 24px;
+        }
+        table{
+	border: ridge 5px darkblue;
+	width: 50%;
+	font-size: 20px;
+	border-collapse:separate ;
+	margin: auto;
+}
+p{
+            font-size: 50px;
+            color: burlywood;
+            text-align: center;
+            text-shadow: 0 0 10px aqua;    
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <script>
+       let numUser;
+        let numX=50
+        let counter=0
+        do{numUser = prompt('Вгадайте числа від 0 до 100', 0);
+        counter++
+        if(numUser===null){
+            alert('Ми чекали від вас число');
+        }
+        else if(+numUser<numX){
+            alert('Ваше число менше');
+        }
+        else if(+numUser>numX){
+            alert('Ваше число більше');
+        }
+        else{
+            alert(`Вітаю ви вгадали ${numX} за спроб ${counter}`);
+        }
+        }while(numUser != numX && numUser !=null);
+    </script>
+    </table>
+</body>
+</html>

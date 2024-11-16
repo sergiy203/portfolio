@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let capitals = {
+            "Brasilia": 2600000,
+            "Kiyv": 2884000,
+            "Paris": 2161000,
+            "Warsaw": 1765000,
+            "Deli": 2909000,
+            "Berlin": 3645000,
+            "Kair": 11200000,
+            "Mehico": 8855000,
+            "London": 8982000
+        }
+        let sortByName = Object.keys(capitals).sort()
+        let max=0
+        let name=""
+         for(let key in capitals){
+            if(capitals[key]>max){
+                max=capitals[key]
+                name=key
+            }
+         }
+        for(let capital of sortByName){
+            document.writeln(capital + ": " + capitals[capital] +"<br>")
+        }
+
+    </script>
+</body>
+</html>

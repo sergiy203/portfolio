@@ -1,0 +1,40 @@
+body{
+	background-color: lightskyblue;
+	background-image: url(https://i.pinimg.com/originals/57/61/5b/57615b8c0092a66c1d4058b1692955cc.gif);
+	background-size: 200px;
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-attachment: fixed;
+}
+p{
+	font-size: 0.8in;
+	background-image: url(https://wallpapers.com/images/hd/beautiful-pictures-65zjwuq46zt8a6l6.jpg);
+background-size: cover;
+color: orangered;
+text-align: center;
+}
+div{
+	height: 500px;
+	width: 500px;
+}
+#d1{
+	background-image: url(https://pics.craiyon.com/2023-06-20/7f9a15a54868484cb758093340ddb0e1.webp);
+	background-size: cover;
+	border: ridge 20px red;
+}
+#d2{
+background-image: url(https://fcit.usf.edu/matrix/wp-content/uploads/2017/01/DanceBot-3-LG.gif);
+border: solid 30px;
+border-image: linear-gradient(orange, green);
+}
+#img2{
+	display: block;
+	margin: auto;
+	width: 50%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 50px;
+
+}
+#img1{
+	width: 50%;
+}

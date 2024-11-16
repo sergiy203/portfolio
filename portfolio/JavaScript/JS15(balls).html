@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Круги</title>
+    <style>
+        body{
+background: url(https://preview.free3d.com/img/2017/06/2140176650648684378/4n5cx8vx.jpg);
+}
+    </style>
+    <canvas id="myCanvas" width="1000" height="1000" style="border: 15px ridge black;"></canvas>
+</head>
+<body>
+    <script>
+        let c = document.getElementById('myCanvas')
+        let cxt = c.getContext("2d")
+        let user =+prompt("Скільки кіл хочете?")
+        let colors=['red','orange','yellow','green','blue','indigo','violet']
+        let cx=c.width
+        let cy=c.height
+        for(let i=0; i<user; i++){
+            let rands= Math.floor(Math.random()*(100+1-10)+10)
+            let randc = Math.floor(Math.random()*colors.length)
+            let randc2=Math.floor(Math.random()*colors.length)
+            let randx = Math.floor(Math.random()*(cx-rands+1-rands)+rands)
+            let randy = Math.floor(Math.random()*(cy-rands+1-rands)+rands)
+            cxt.beginPath()
+            cxt.arc(randx, randy, rands, 0*Math.PI, 2*Math.PI, true)
+            cxt.lineWidth=5
+            cxt.stroleStyle=colors[randc]
+            cxt.fillStyle = colors [randc2]
+            cxt.fill()
+            cxt.stroke()
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прямокутник</title>
+    <style>
+        		div{
+			font-size: 40px; 
+			color: darkred;
+			text-align: center;
+            background-color: darkgray;
+            opacity: .7;
+            border-radius: 50px;
+            width: 30%;
+            margin: auto;
+		}
+		.cqe{
+			width: 70px;
+			height: 30px;
+			font-size: 24px;
+			text-align: center;
+		}
+        .btn {
+  font-family: monospace;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #FAFAFA;
+  background: #252525;
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+  margin: 35px 0;	
+width: 180px;
+height: 45px;
+font-size: 24px;
+}
+
+.btn :active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+        body{
+          background: url(https://preview.free3d.com/img/2017/06/2140176650648684378/4n5cx8vx.jpg);
+        }
+        @media only screen and (max-width:800px){
+    div{
+      width: 100%;
+    }
+  }
+    </style>
+</head>
+<body>
+    <script>
+        	function rectangle() {
+  let a =+ document.qef.a.value;
+  let b =+ document.qef.b.value;
+  let sol = document.getElementById('rectangle')
+
+	
+	let S = a * b; // площа трикутника
+	let P = (a+b)*2; // периметр трикутника
+	string="S = " + S + ";  P = " + P	
+	sol.innerHTML = string;
+}
+    </script>
+    	<div>
+            <p>Розв'язок площи та периметра прямокутника</p>
+            <form name="qef" action="javascript:rectangle()">
+            a <input class="cqe" name="a" type="text" value="3" size="4">
+            b <input class="cqe" name="b" type="text" value="4" size="4">
+            <input class="btn" type="submit" value="Розрахувати">
+            </form>
+            Рішення: <span id="rectangle">Введить коефіцієнти та натисніть "Розрахувати"</span>
+            </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компліменти</title>
+    <style>
+               div{
+     font-size: 40px; 
+     color: darkred;
+     text-align: center;
+     background-color: darkgray;
+     opacity: .7;
+     border-radius: 50px;
+     width: 30%;
+     margin: auto;
+ }
+ .cqe{
+     width: 400px;
+     height: 30px;
+     font-size: 24px;
+     text-align: center;
+ }
+ .btn {
+font-family: monospace;
+color: #FAFAFA;
+text-transform: uppercase;
+padding: 10px 20px;
+border-radius: 10px;
+border: 2px solid #FAFAFA;
+background: #252525;
+box-shadow: 3px 3px #fafafa;
+cursor: pointer;
+margin: 35px 0;	
+width: 180px;
+height: 45px;
+font-size: 24px;
+}
+
+.btn :active {
+box-shadow: none;
+transform: translate(3px, 3px);
+}
+ body{
+   background: url(https://preview.free3d.com/img/2017/06/2140176650648684378/4n5cx8vx.jpg);
+ }
+ 
+        p{
+            font-size: 24px;
+        }
+        @media only screen and (max-width:800px){
+    div{
+      width: 100%;
+    }
+  }
+    </style>
+</head>
+<body>
+    <script>
+      /*  let numbers = ["Нуль", "Один", "Два"];
+alert(numbers [0] ); // Нуль
+alert(numbers [1] ); // Один
+alert(numbers [2] ); // Два
+numbers [2] = "не два"; // тепер ["Нуль", "Один", "не два"]
+alert(numbers);
+numbers [3] = "Три"; // тепер ["Нуль", "Один", "не два", "Три"] 
+alert(numbers);
+let colors=["Yellow","Blue"]
+alert(colors)
+colors.push("Red")
+alert(colors)
+colors[colors.length-2]="Black"
+alert(colors)
+colors.shift()
+alert(colors)
+colors.unshift("Green","Orange")
+alert(colors)*/
+function kompliments(){
+    let compliments=['smart','clever','nice','polite','generous','amazing','awesome','gorgeous','attractive','kind','creative','genius','fabous','hard-working']
+let animals=['cat','dog','hamster','fox','bear','lizard','wolf','goldfish','snake','parrot','elephant','giraffe','frog','crow','crow']
+let colors=['red', 'orange', 'yellow', 'green', 'blue', 'indigo','maroon']
+let number=+document.qef.x.value;
+let answer=document.getElementById("enter")
+let string=""
+for(let i=1;i<=number;i++){
+    let rand1=Math.floor(Math.random()*compliments.length)
+    let rand2=Math.floor(Math.random()*animals.length)
+    let rand3=Math.floor(Math.random()*colors.length)
+    let rand4=Math.floor(Math.random()*colors.length)
+    string+=(`<p style="color:${colors[rand3]}; backgroung-color:${colors[rand3]};">${i} You are so <span style="color:${colors[rand3]};">${compliments[rand1]} as ${animals[rand2]}</span></p><br>`)
+}
+function findValue(array, value) {
+    let index = array.indexOf(value);
+}
+answer.innerHTML=string
+}
+
+
+    </script>
+          <div>
+            <p>Введіть кількість компліментів</p>
+            <form name="qef" action="javascript:kompliments()">
+             <input class="cqe" name="x" type="text" value="" size="4">
+            <input class="btn" type="submit" value="Ввести">
+            </form>
+             <span id="enter"></span>
+            </div>
+</body>
+</html>

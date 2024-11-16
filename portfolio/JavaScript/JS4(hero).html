@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Герой</title>
+    <style>
+           		div{
+			font-size: 40px; 
+			color: darkred;
+			text-align: center;
+            background-color: darkgray;
+            opacity: .7;
+            border-radius: 50px;
+            width: 30%;
+            margin: auto;
+		}
+		.cqe{
+			width: 400px;
+			height: 30px;
+			font-size: 24px;
+			text-align: center;
+		}
+        .btn {
+  font-family: monospace;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #FAFAFA;
+  background: #252525;
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+  margin: 35px 0;	
+width: 180px;
+height: 45px;
+font-size: 24px;
+}
+
+.btn :active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+        body{
+          background: url(https://preview.free3d.com/img/2017/06/2140176650648684378/4n5cx8vx.jpg);
+        }
+        @media only screen and (max-width:800px){
+    div{
+      width: 100%;
+    }
+  }
+    </style>
+</head>
+<body>
+  <script>
+    function character(){
+    let characterName=document.qef.question.value;
+    let answer = document.getElementById('character')
+    if(characterName=='Кіану Рівз'){
+      string=('Так ви вгадали')
+    }
+    else if(characterName!='Кіану Рівз'){
+      string=('Ви не вгадали, героя звати Кіану Рівз')
+    }
+    answer.innerHTML = string;
+  }
+
+  </script>  
+   <div>
+    <p>Як звати актора який грав Нео у Матриці?</p>
+    <form name="qef" action="javascript:character()">
+    <input class="cqe" name="question" type="text" value="Кіану Рівз" size="4">
+    <input class="btn" type="submit" value="Відправити">
+    </form>
+    <span id="character">Введіть ім'я та натисніть відправити</span>
+    </div>
+</body>
+</html>

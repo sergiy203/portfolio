@@ -1,0 +1,97 @@
+body{
+	background-color: aliceblue;
+}
+p{
+	font-size: 50px;
+	background-color: indianred;
+}
+.p1{
+	display: inline-block;
+}
+.s1{
+	border: dotted;
+	border-color: green;
+	display: block;
+}
+#first{
+	width: 500px;
+	height: 500px;
+	background-color: orange;
+	border: ridge 20px blueviolet;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-width: 20px;
+	border-left: dotted yellow 20px;
+	border-right: dashed olive 20px;
+	border-bottom: groove red 20px;
+	border-top: ridge orange 20px;
+	margin: 50px;
+}
+#second{
+	width: 500px;
+	height: 500px;
+	background-color: blueviolet;
+	border: groove 20px orange;
+	font-size: 50px;
+	text-align: center;
+	border-style: dotted dashed;
+    background-color: red orange yellow pink;	
+}
+#third{
+	width: 500px;
+	height: 150px;
+	margin: 10px;
+	text-align: right;
+	background-color: blue;
+	color: firebrick;
+	border-right: groove 5px yellow ;
+	border-left: groove 5px yellow ;
+	border-bottom: dotted 20px green;
+	border-top: dotted 20px green;
+
+}
+#fourth{
+	width: 600px;
+	height: 200px;
+	border: groove 10px deeppink;
+	margin: 20px;
+	text-align: left;
+	background-color: green;
+	color: orange;
+	border-right: dashed 25px red ;
+	border-left: ridge 10px orange  ;
+	border-bottom: dashed 25px red ;
+	border-top: ridge 10px orange ;
+}
+#sixth,#seventh,#eighth,#fifth{
+	margin: 200px;
+}
+#sixth{
+    border: ridge 15px yellowgreen;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: orange;
+    font-size: 30px;
+}
+#seventh{
+	border: ridge 15px darkred;
+	justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: blueviolet;
+    font-size: 30px;
+}
+#eighth{
+	border: ridge 15px  black;
+	justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: firebrick;
+    font-size: 30px;
+}

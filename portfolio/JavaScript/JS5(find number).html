@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body style="background-color:maroon">
+    <style>
+        body{
+            background-color: honeydew;
+            
+        }
+        p{
+            background-color: mediumblue;
+            font-size: 50px;
+            color: burlywood;
+            text-align: center;
+            text-shadow: 0 0 10px aqua;    
+        }
+        @media only screen and (max-width:800px){
+    div{
+      width: 100%;
+    }
+  }
+    </style>
+    <script>
+        let answer;
+
+        let inputN = prompt("Введіть число від 1 до 50");
+        let questN = prompt("Вгадайте число від 1 до 50");
+        inputN=parseInt(inputN);
+        if(questN == inputN) answer="Ви вгадали!";
+        else if(questN > inputN) answer="Ваше число більше";
+        else if(questN < inputN) answer="Ваше число меньше";
+        else if(questN == null) answer="Ви скасували дію";
+        else if(inputN == null) answer="Ви скасували дію";
+        else if(inputN != number) answer="Вводіть числа";
+        else if(questN != number)answer="Вводіть числа";
+        alert(answer);
+        document.writeln("<p> "+answer+"</p>") 
+     </script>
+</body>
+</html>

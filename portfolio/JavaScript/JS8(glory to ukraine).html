@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слава Україні</title>
+    <style>
+        div{
+font-size: 40px; 
+color: darkred;
+text-align: center;
+background-color: darkgray;
+opacity: .7;
+border-radius: 50px;
+width: 30%;
+margin: auto;
+}
+.cqe{
+width: 400px;
+height: 30px;
+font-size: 24px;
+text-align: center;
+}
+.btn {
+font-family: monospace;
+color: #FAFAFA;
+text-transform: uppercase;
+padding: 10px 20px;
+border-radius: 10px;
+border: 2px solid #FAFAFA;
+background: #252525;
+box-shadow: 3px 3px #fafafa;
+cursor: pointer;
+margin: 35px 0;	
+width: 350px;
+height: 45px;
+font-size: 24px;
+}
+
+.btn :active {
+box-shadow: none;
+transform: translate(3px, 3px);
+}
+body{
+background: url(https://preview.free3d.com/img/2017/06/2140176650648684378/4n5cx8vx.jpg);
+}
+@media only screen and (max-width:800px){
+    div{
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+    <script>
+        function diapozon(){
+            let number=+document.qef.amount.value;
+            let answer=document.getElementById("enter")
+            let string=""
+for(let count = 1; count <= number; count++){
+    string+=(`<ul>${count}. Glory to Ukraine!</ul>`)
+}
+/*document.writeln(`Glory to heroes ${number} times!`)*/ 
+answer.innerHTML=string
+        }
+        
+    </script>
+         <div>
+            <p>Скільки словосполучень хочете продублювати?</p>
+            <form name="qef" action="javascript:diapozon()">
+            <input class="cqe" name="amount" type="text" value="100" size="4">
+            <input class="btn" type="submit" value="Ввести кількість">
+            </form>
+             <span id="enter"></span>
+            </div>
+</body>
+</html>

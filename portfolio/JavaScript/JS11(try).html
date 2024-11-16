@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спроби</title>
+    <style>
+        div{
+font-size: 40px; 
+color: darkred;
+text-align: center;
+background-color: darkgray;
+opacity: .7;
+border-radius: 50px;
+width: 30%;
+margin: auto;
+}
+.cqe{
+width: 50px;
+height: 30px;
+font-size: 24px;
+text-align: center;
+}
+.btn {
+font-family: monospace;
+color: #FAFAFA;
+text-transform: uppercase;
+padding: 10px 20px;
+border-radius: 10px;
+border: 2px solid #FAFAFA;
+background: #252525;
+box-shadow: 3px 3px #fafafa;
+cursor: pointer;
+margin: 35px 0;	
+width: 350px;
+height: 45px;
+font-size: 24px;
+}
+
+.btn :active {
+box-shadow: none;
+transform: translate(3px, 3px);
+}
+body{
+background: url(https://preview.free3d.com/img/2017/06/2140176650648684378/4n5cx8vx.jpg);
+}
+@media only screen and (max-width:800px){
+    div{
+      width: 100%;
+    }
+  }
+    </style>
+</head>
+<body>
+    <script>
+          let min=+prompt("Введіть мінімальне число діапозону", 1)
+let max=+prompt("Введіть максимальне число діапозону", 30)
+let secret=Math.floor(Math.random()*(max+1-min))+min;
+let minTry = 0
+let maxTry= 10
+while(minTry<maxTry){
+    let question = prompt(`Вгадайте число від ${min} до ${max}. Спроб залишилось: ${maxTry-minTry}`)
+    minTry++
+if(question == secret){
+    alert(`Ви вгадали число за спроб:${maxTry-minTry+1}`)
+    break;
+}
+else if(question<secret){
+    alert(`Моє число більше. Спроб залишилось: ${maxTry-minTry} `)
+}
+else if(question>secret){
+    alert(`Моє число менше. Спроб залишилось: ${maxTry-minTry}`)
+}
+ if(minTry==maxTry){
+    alert(`В вас не залишилось спроб число було: ${secret}`)
+    break;
+}
+} 
+    </script>
+</body>
+</html>

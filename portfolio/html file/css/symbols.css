@@ -1,0 +1,54 @@
+body{
+	background-color: lightgoldenrodyellow;
+}
+p{
+	font-size: 75px;
+	color: green;
+	background-color: lightsalmon;
+}
+.ex1{
+	font-family: Helvetica, Arial, sans-serif;
+	font-style: oblique;
+}
+.ex2{
+	font-family: fantasy;
+	font-weight: 900;
+}
+.ex3{
+	font-family: 'Lobster', cursive;
+}
+.ex4{
+	font-family: 'Rubik Wet Paint', cursive;
+}
+.ex5{
+	font-family: 'Rubik Gemstones', cursive;
+	color: red;
+	background-color: black;
+}
+.ex6{
+	text-shadow: 0 0 10px green;
+}
+.ex7{
+	text-shadow: 3px - 3px yellowgreen;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+}
+.ex8{
+	text-shadow: 1px 1px 2px black, 0 0 1em darkblue, 0 0 0.2em blue;
+	 color: darkwhite;
+	 font: 2.5em Georgia, serif;
+	 background-color: #999999;
+}
+.ex9{
+	text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-position: under;
+    text-decoration-color: blue;
+    height: 100px;
+}
+.f1{
+	font-size: 2em;
+	color: yellowgreen;
+	font-family: 'Rubik Gemstones', cursive;
+	text-shadow: 5px -5px maroon;
+}

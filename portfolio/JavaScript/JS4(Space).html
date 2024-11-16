@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Політ у космос</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+               		div{
+			font-size: 40px; 
+			color: darkred;
+			text-align: center;
+            background-color: darkgray;
+            opacity: .7;
+            border-radius: 50px;
+            width: 30%;
+            margin: auto;
+		}
+		.cqe{
+			width: 400px;
+			height: 30px;
+			font-size: 24px;
+			text-align: center;
+		}
+        .btn {
+  font-family: monospace;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #FAFAFA;
+  background: #252525;
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+  margin: 35px 0;	
+width: 180px;
+height: 45px;
+font-size: 24px;
+}
+
+.btn :active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+        body{
+          background: url(https://preview.free3d.com/img/2017/06/2140176650648684378/4n5cx8vx.jpg);
+        }
+        @media only screen and (max-width:800px){
+    div{
+      width: 100%;
+    }
+  }
+    </style>
+</head>
+<body>
+    <script>
+        function space(){
+             let spaceYear = document.qef.question.value;
+             let answer = document.getElementById('space')
+if(spaceYear == null){
+    alert("Операцію скасовано")
+}
+else if (spaceYear<1961) {
+     string=( 'Це замало!' );
+}
+ else if (spaceYear >1961) {
+     string=( 'Це забагато' ); 
+}
+ else if (spaceYear == 1961){
+     string=( 'Так, відповідь вірна' );
+} 
+else{
+    string=("Треба вводити відповідь, а не ваші калякі малякі")
+};
+answer.innerHTML = string
+        }
+    
+    </script>
+    <div>
+        <p>Коли вперше людина полетіла у космос</p>
+        <form name="qef" action="javascript:space()">
+        <input class="cqe" name="question" type="text" value="" size="4">
+        <input class="btn" type="submit" value="Відправити">
+        </form>
+        <span id="space">Введіть рік та натисніть відправити</span>
+        </div>
+</body>
+</html>

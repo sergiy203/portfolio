@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблиця множення</title>
+    <style>
+        div{
+font-size: 40px; 
+color: darkred;
+text-align: center;
+background-color: darkgray;
+opacity: .7;
+border-radius: 50px;
+width: 30%;
+margin: auto;
+}
+.cqe{
+width: 400px;
+height: 30px;
+font-size: 24px;
+text-align: center;
+}
+.btn {
+font-family: monospace;
+color: #FAFAFA;
+text-transform: uppercase;
+padding: 10px 20px;
+border-radius: 10px;
+border: 2px solid #FAFAFA;
+background: #252525;
+box-shadow: 3px 3px #fafafa;
+cursor: pointer;
+margin: 35px 0;	
+width: 350px;
+height: 45px;
+font-size: 24px;
+}
+
+.btn :active {
+box-shadow: none;
+transform: translate(3px, 3px);
+}
+body{
+background: url(https://preview.free3d.com/img/2017/06/2140176650648684378/4n5cx8vx.jpg);
+}
+@media only screen and (max-width:800px){
+    div{
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+    <script>
+        function table(){
+            let number=+document.qef.Plural.value;
+            let answer=document.getElementById("enter")
+            let string= ""
+        for(let i = 1; i <=10; i++){
+            string+=(`<tr> <td> <p> ${number} * ${i} = ${number * i} </p> </td> </tr>`)
+        }
+        answer.innerHTML=string
+        }
+        
+    </script>
+        <div>
+            <p>Введіть число, а я зроблю таблицю множення на нього</p>
+            <form name="qef" action="javascript:table()">
+             <input class="cqe" name="Plural" type="text" value="3" size="4">
+            <input class="btn" type="submit" value="Ввести">
+            </form>
+             <span id="enter"></span>
+            </div>
+</body>
+</html>

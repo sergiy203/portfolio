@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8">
+	<title>Практика на if else</title>
+	<style type="text/css">
+		div{
+			font-size: 50px; 
+			color: green;
+			text-align: center;
+		}
+		.cqe{
+			width: 50px;
+			height: 50px;
+			font-size: 36px;
+			text-align: center;
+		}
+		.btn{
+			width: 250px;
+			height: 50px;
+			font-size: 36px;
+			color: purple;
+		}
+
+	</style>
+</head>
+<body>
+	<script>
+    /*function checkSum(sum) {
+    if (sum > 1000) {
+      return true;
+    } else {
+      return confirm('Для знижки вам необхідно вибрати ще товарів на сумму більше 1000 грн. Продовжимо?');
+    }
+  }
+  let sum = +prompt('Вкажіть суму покупки?');
+   if (checkSum(sum)) {
+    alert( 'Знижка 20% забезпечена!' );
+  } else {
+    alert( 'Нічого, у нас все одно низькі ціни!');
+  }*/
+	function tr_size() {
+  let a = document.qef.a.value;
+  let b = document.qef.b.value;
+  let c = document.qef.c.value;
+  let sol = document.getElementById('tr_size')
+
+	
+	let S = a * b * c; // площа трикутника
+	let P = Number(a) + Number(b) + Number(c); // периметр трикутника
+	string="S = " + S + ";  P = " + P	
+	sol.innerHTML = string;
+}
+
+
+	</script>
+	<div>
+<p>Розв'язок площи та периметра трикутника</p>
+<form name="qef" action="javascript:tr_size()">
+a <input class="cqe" name="a" type="text" value="1" size="4">
+b <input class="cqe" name="b" type="text" value="2" size="4">
+c <input class="cqe" name="c" type="text" value="3" size="4">
+<input class="btn" type="submit" value="Розрахувати">
+<input class="btn" type="reset" name="reset" value="Скинути">
+</form>
+Рішення: <span id="tr_size">Введить коефіцієнти та натисніть "Розрахувати"</span>
+</div>
+
+</body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сума в діапозоні</title>
+</head>
+<style>
+        div{
+font-size: 40px; 
+color: darkred;
+text-align: center;
+background-color: darkgray;
+opacity: .7;
+border-radius: 50px;
+width: 32%;
+margin: auto;
+}
+.cqe{
+width: 300px;
+height: 30px;
+font-size: 24px;
+text-align: center;
+}
+.btn {
+font-family: monospace;
+color: #FAFAFA;
+text-transform: uppercase;
+padding: 10px 20px;
+border-radius: 10px;
+border: 2px solid #FAFAFA;
+background: #252525;
+box-shadow: 3px 3px #fafafa;
+cursor: pointer;
+margin: 35px 0;	
+width: 350px;
+height: 45px;
+font-size: 24px;
+}
+
+.btn :active {
+box-shadow: none;
+transform: translate(3px, 3px);
+}
+body{
+background: url(https://preview.free3d.com/img/2017/06/2140176650648684378/4n5cx8vx.jpg);
+}
+@media only screen and (max-width:800px){
+    div{
+      width: 100%;
+    }
+  }
+</style>
+<body>
+    <script>
+        function diapozon(){
+            let min=+document.qef.Min.value;
+let max=+document.qef.Max.value;
+let sum=0
+let answer=document.getElementById("enter")
+for(let count = min; count <= max; count++){
+   sum=sum+count
+}
+string=(`Сума чисел в діапозоні від ${min} до ${max} дорівнює ${sum}`)
+answer.innerHTML=string
+        }
+
+    </script>
+     <div>
+        <p>Введіть мінімальне та максимальне число діапозону</p>
+        <form name="qef" action="javascript:diapozon()">
+        Мінімальне <input class="cqe" name="Min" type="text" value="1" size="4">
+        Максимальне <input class="cqe" name="Max" type="text" value="100" size="4">
+        <input class="btn" type="submit" value="Сума чисел з діапозону">
+        </form>
+         <span id="enter"></span>
+        </div>
+</body>
+</html>

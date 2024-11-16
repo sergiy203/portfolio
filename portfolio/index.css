@@ -1,0 +1,142 @@
+body{
+    background-color: rgb(229, 228, 228);
+    margin: 0;
+}
+header{
+    background-color: #E7BBA6;
+    width:100%;
+    border-radius: 30px;
+    height: 100px;  
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+header h1{
+  font-size: 45px;
+}
+main{
+    width:50%;
+    float: left;
+    border-radius: 20px ;
+    justify-content: center;
+    align-items: center;
+}
+nav, aside{
+    width: 25%;
+    background-color: #E9A27C ;
+    height: 520px;
+    float: left;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+article{
+    font-size: 22px;
+}
+li {
+    list-style-type: none;
+  }
+img{
+  width: 130px;
+  height: auto;
+  border: solid 5px #E7BBA6 ;
+  display: block;
+    margin: 0 auto;
+}
+footer{
+  background-color: rgb(106, 108, 110);
+  width:100%;
+  height: 100px;  
+  display: flex;
+justify-content: center;
+align-items: center;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+p{
+  font-size: 25px;
+  color: white;
+  margin: 0 10px;
+}
+a{
+  text-decoration: none;
+}
+h2{
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+
+
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #E9A27C;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  margin-left: 15px;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #E7BBA6;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #E9A27C;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
